@@ -1,0 +1,104 @@
+<div *ngIf="navBarItems">
+  <div *ngFor="let item of navBarItems">
+    <div
+      *ngIf="item.category === 'general'"
+      (click)="handleNavSelect(item)"
+      [ngStyle]="
+        item.selected
+          ? {
+              'background-color': 'rgba(30, 94, 255, 1)',
+              color: 'white',
+              'border-radius': '0.5rem'
+            }
+          : {}
+      "
+      class="individual-nav-wrapper"
+    >
+      <div class="label-icon">
+        <mat-icon>{{ item.icon }}</mat-icon>
+        <span>{{ item.label }}</span>
+      </div>
+      <div class="order-number" *ngIf="item.value">{{ item.value }}</div>
+    </div>
+  </div>
+
+  <span class="nav-title"> Other Information</span>
+
+  <div *ngFor="let item of navBarItems">
+    <div
+      *ngIf="item.category === 'information'"
+      (click)="handleNavSelect(item)"
+      [ngStyle]="
+        item.selected
+          ? {
+              'background-color': 'rgba(30, 94, 255, 1)',
+              color: 'white',
+              'border-radius': '0.5rem'
+            }
+          : {}
+      "
+      class="individual-nav-wrapper"
+    >
+      <div class="label-icon">
+        <mat-icon>{{ item.icon }}</mat-icon>
+        <span>{{ item.label }}</span>
+      </div>
+      <div class="order-number" *ngIf="item.value">{{ item.value }}</div>
+    </div>
+  </div>
+
+  <span class="nav-title"> Settings</span>
+
+  <div *ngFor="let item of navBarItems">
+    <div
+      *ngIf="item.category === 'setting'"
+      (click)="handleNavSelect(item)"
+      [ngStyle]="
+        item.selected
+          ? {
+              'background-color': 'rgba(30, 94, 255, 1)',
+              color: 'white',
+              'border-radius': '0.5rem'
+            }
+          : {}
+      "
+      class="individual-nav-wrapper"
+    >
+      <div class="label-icon">
+        <mat-icon>{{ item.icon }}</mat-icon>
+        <span>{{ item.label }}</span>
+      </div>
+      <div class="order-number" *ngIf="item.value">{{ item.value }}</div>
+    </div>
+  </div>
+  <!-- <span class="nav-title"> Testing</span>
+
+  <div *ngFor="let item of navBarItems">
+    <div
+      *ngIf="item.category === 'setting'"
+      (click)="handleNavSelect(item)"
+      [ngStyle]="
+        item.selected
+          ? {
+              'background-color': 'rgba(30, 94, 255, 1)',
+              color: 'white',
+              'border-radius': '0.5rem'
+            }
+          : {}
+      "
+      class="individual-nav-wrapper"
+    >
+      <ng-container *ngTemplateOutlet="navTemplate; context: item">
+      </ng-container>
+    </div>
+  </div> -->
+</div>
+
+<!-- <ng-template #navTemplate let-label>
+  <div class="label-icon">
+    <mat-icon>{{ icon }}</mat-icon>
+    <span>{{ label }}</span>
+    </div>
+    <div class="order-number" *ngIf="data.value">{{ data.value }}</div>
+  </div>
+</ng-template> -->

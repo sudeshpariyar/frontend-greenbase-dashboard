@@ -1,0 +1,20 @@
+.sales-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-block: 1rem;
+  gap: 1rem;
+}
+.sales-value {
+  font-weight: 700;
+  font-size: 20px;
+  color: rgba(19, 21, 35, 1);
+}
+.sales-title {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(90, 96, 127, 1);
+}
+.sales-chart-wrapper {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,33 @@
+.orders-time-chart-wrapper {
+  padding-top: 1rem;
+}
+.chart-date-info {
+  display: flex;
+  flex-direction: column1;
+}
+.chart-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.order-value {
+  font-weight: 700;
+  font-size: 20px;
+}
+.order-value-date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(90, 96, 127, 1);
+}
+.order-date-info {
+  display: flex;
+  gap: 3rem;
+}
+.month-date {
+  display: flex;
+  gap: 1rem;
+}
+.chart-container {
+  padding-top: 1rem;
+}

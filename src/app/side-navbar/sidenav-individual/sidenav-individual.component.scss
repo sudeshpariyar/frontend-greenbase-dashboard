@@ -1,0 +1,39 @@
+.individual-nav-wrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.label-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.order-number {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  font-weight: 700;
+  background-color: black;
+  height: 1rem;
+  color: rgba(255, 255, 255, 1);
+
+  border-radius: 0.5rem;
+}
+.individual-nav-wrapper:hover {
+  background-color: #d9e4ff;
+}
+.nav-title {
+  margin-top: 1rem;
+  padding-left: 0.8rem;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(161, 167, 196, 1);
+}
+.other-info-setting {
+  display: flex;
+  flex-direction: column;
+}

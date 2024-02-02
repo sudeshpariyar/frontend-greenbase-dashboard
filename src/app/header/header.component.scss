@@ -1,0 +1,38 @@
+.header-wrapper {
+  padding: 0.5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(21, 34, 50, 0.08);
+}
+.logo-title {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.header-title {
+  font-weight: 800;
+  font-size: 31px;
+  display: flex;
+}
+.search-wrapper {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-left: 8rem;
+  color: rgba(90, 96, 127, 1);
+}
+.search-input {
+  border: none;
+  outline: none;
+}
+.header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  margin-right: 1rem;
+  color: rgba(90, 96, 127, 1);
+}

@@ -1,0 +1,7 @@
+<app-custom-card>
+  <div *ngIf="dasData" class="summary-wrapper">
+    <div *ngFor="let data of dasData">
+      <app-custom-data-display [dashboardData]="data"></app-custom-data-display>
+    </div>
+  </div>
+</app-custom-card>

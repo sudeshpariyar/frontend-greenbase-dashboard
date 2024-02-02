@@ -1,0 +1,27 @@
+<app-custom-card cardTitle="Orders Over Time">
+  <div class="orders-time-chart-wrapper">
+    <div class="chart-info-wrapper">
+      <div class="order-date-info">
+        <div class="chart-data-info">
+          <div class="order-value">645</div>
+          <div class="order-value-date">Orders on May 22</div>
+        </div>
+        <div class="chart-data-info">
+          <div class="order-value">429</div>
+          <div class="order-value-date">Orders on May 21</div>
+        </div>
+      </div>
+      <div class="month-date">
+        <div class="order-value-date">
+          <mat-checkbox></mat-checkbox><span>May 21</span>
+        </div>
+        <div class="order-value-date">
+          <mat-checkbox></mat-checkbox><span>May 22</span>
+        </div>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas style="height: 204px" id="MyChart">{{ chart }}</canvas>
+    </div>
+  </div>
+</app-custom-card>

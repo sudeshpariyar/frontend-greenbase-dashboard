@@ -1,0 +1,18 @@
+<app-custom-card cardTitle="Last 7 Days Sales">
+  <div class="sales-chart-wrapper">
+    <div class="sales-info-wrapper">
+      <div class="individual-info">
+        <div class="sales-value">1259</div>
+        <div class="sales-title">Items Sold</div>
+      </div>
+      <div class="individual-info">
+        <div class="sales-value">$45,154</div>
+        <div class="sales-title">Revenue</div>
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="chart-container">
+      <canvas id="barChart">{{ chart }}</canvas>
+    </div>
+  </div>
+</app-custom-card>

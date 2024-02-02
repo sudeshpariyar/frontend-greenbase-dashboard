@@ -1,0 +1,11 @@
+.summary-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  div {
+    border-right: 1px solid #e6e6e6;
+  }
+  div:last-child {
+    border-right: none;
+  }
+}

@@ -1,0 +1,31 @@
+<div class="custom-data-display-wrapper">
+  <div>
+    <div class="custom-data-value">
+      {{ dashboardData.value }}
+    </div>
+    <div class="custom-data-description">
+      <div class="data-title">{{ dashboardData.title }}</div>
+      <div
+        [ngStyle]="
+          dashboardData.gain
+            ? {
+                color: 'rgba(6, 165, 97, 1)'
+              }
+            : {
+                color: 'rgba(240, 20, 47, 1)'
+              }
+        "
+        class="data-lossGain-value"
+      >
+        <span>{{ dashboardData.lossGainValue / 100 | percent : "0.2" }}</span>
+        <div *ngIf="dashboardData.gain; else expandmore">
+          <mat-icon>expand_less</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="icon-wrapper">
+    <mat-icon> {{ dashboardData.icon }}</mat-icon>
+  </div>
+</div>
+<ng-template #expandmore> <mat-icon>expand_more</mat-icon> </ng-template>
