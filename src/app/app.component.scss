@@ -3,11 +3,11 @@
   flex-direction: row;
 }
 .side-nav {
-  height: 100%;
+  height: 100vh;
   display: block;
 }
 .router-outlet-body {
   padding-block: 1rem;
-  padding-inline: 1.5rem;
+  margin-inline: 1rem;
   width: 100%;
 }
