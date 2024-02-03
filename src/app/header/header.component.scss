@@ -6,7 +6,8 @@
   align-items: center;
   justify-content: space-between;
   box-shadow: rgba(21, 34, 50, 0.08);
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
 }
 .logo-title {
