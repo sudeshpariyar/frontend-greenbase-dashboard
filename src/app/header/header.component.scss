@@ -19,13 +19,14 @@
   font-weight: 800;
   font-size: 31px;
   display: flex;
+  color: (0, 0, 0, 1);
 }
 .search-wrapper {
   display: flex;
   flex: 1;
   align-items: center;
   margin-left: 8rem;
-  color: rgba(90, 96, 127, 1);
+  color: var(--secondary-font-color);
 }
 .search-input {
   border: none;
@@ -37,7 +38,7 @@
   align-items: center;
   gap: 1.5rem;
   margin-right: 1rem;
-  color: rgba(90, 96, 127, 1);
+  color: var(--secondary-font-color);
 }
 .user-image {
   height: 2rem;

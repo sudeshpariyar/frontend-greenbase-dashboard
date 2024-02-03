@@ -17,12 +17,12 @@
 .custom-data-value {
   font-weight: 700;
   font-size: 20px;
-  color: rgba(19, 21, 35, 1);
+  color: var(--primary-font-color);
 }
 .data-title {
   font-weight: 400;
   font-size: 14px;
-  color: rgba(90, 96, 127, 1);
+  color: var(--secondary-font-color);
 }
 .data-lossGain-value {
   display: flex;

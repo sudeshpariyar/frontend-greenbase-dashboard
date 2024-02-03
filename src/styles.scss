@@ -2,6 +2,11 @@
 * {
   margin: 0;
 }
+:root {
+  --primary-font-color: rgba(19, 21, 35, 1);
+  --secondary-font-color: rgba(90, 96, 127, 1);
+}
+
 body {
   background-color: #f5f6fa;
 }
@@ -21,9 +26,10 @@ body {
 }
 th.mat-header-cell {
   border-bottom: 3px solid #e6e6e6;
+  color: var(--secondary-font-color);
 }
 td.mat-cell {
-  color: rgba(19, 21, 35, 1);
+  color: var(--primary-font-color);
   font-size: 14px;
   font-weight: 400;
   border-bottom: 1px solid #e6e6e6;
