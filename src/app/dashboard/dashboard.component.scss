@@ -9,6 +9,16 @@
   grid-template-columns: 3fr 1fr;
   gap: 1rem;
 }
+@media only screen and (max-width: 768px) {
+  .dashboard-chart-components {
+    display: flex;
+    flex-direction: column;
+  }
+  .recent-and-top-product {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
 
 .recent-and-top-product {
   display: grid;
