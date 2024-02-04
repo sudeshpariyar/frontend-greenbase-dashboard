@@ -22,6 +22,7 @@ import { StatusHighlightDirective } from './directives/status-highlight.directiv
 import { OrderOverTimeChartComponent } from './dashboard/order-over-time-chart/order-over-time-chart.component';
 import { LastSevenDaySalesChartComponent } from './dashboard/last-seven-day-sales-chart/last-seven-day-sales-chart.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatDividerModule,
     MatTableModule,
     MatCheckboxModule,
+    MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

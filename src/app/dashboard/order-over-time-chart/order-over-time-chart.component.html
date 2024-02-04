@@ -11,12 +11,17 @@
           <div class="order-value-date">Orders on May 21</div>
         </div>
       </div>
+
       <div class="month-date">
         <div class="order-value-date">
-          <mat-checkbox></mat-checkbox><span>May 21</span>
+          <mat-checkbox [checked]="may21Selected" (change)="changeEvent()">
+          </mat-checkbox>
+          <span>May 21</span>
         </div>
         <div class="order-value-date">
-          <mat-checkbox></mat-checkbox><span>May 22</span>
+          <mat-checkbox [checked]="!may21Selected" (change)="changeEvent()">
+          </mat-checkbox>
+          <span>May 22</span>
         </div>
       </div>
     </div>

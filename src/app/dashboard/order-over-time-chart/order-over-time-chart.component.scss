@@ -31,3 +31,10 @@
 .chart-container {
   padding-top: 1rem;
 }
+::ng-deep mat-checkbox .mat-checkbox-checkmark-path {
+  stroke: white !important;
+}
+.mat-checkbox-checked {
+  border-color: rgba(30, 94, 255, 1) !important;
+  background-color: rgba(30, 94, 255, 1);
+}

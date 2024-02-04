@@ -8,19 +8,27 @@ import Chart from 'chart.js/auto';
 })
 export class OrderOverTimeChartComponent implements OnInit {
   constructor() {}
+  may21Selected = true;
+  public chart: any;
 
   ngOnInit(): void {
     this.createChart();
   }
-  public chart: any;
+  changeEvent = () => {
+    this.may21Selected = !this.may21Selected;
+    this.may21Selected
+      ? (this.chart.data.datasets[0].borderColor = 'rgba(30, 94, 255, 1)')
+      : (this.chart.data.datasets[0].borderColor = 'rgba(217, 225, 236, 1)');
+    !this.may21Selected
+      ? (this.chart.data.datasets[1].borderColor = 'rgba(30, 94, 255, 1)')
+      : (this.chart.data.datasets[1].borderColor = 'rgba(217, 225, 236, 1)');
+    this.chart.update();
+  };
 
   createChart() {
     this.chart = new Chart('MyChart', {
-      type: 'line', //this denotes tha type of chart
-
+      type: 'line',
       data: {
-        // values on X-Axis
-
         labels: [
           '4am',
           '5am',
@@ -37,7 +45,9 @@ export class OrderOverTimeChartComponent implements OnInit {
         datasets: [
           {
             label: 'May 21',
+            // borderColor: 'rgba(30, 94, 255, 1)',
             borderColor: 'rgba(30, 94, 255, 1)',
+
             data: [
               '14',
               '61',
@@ -51,7 +61,7 @@ export class OrderOverTimeChartComponent implements OnInit {
               '36',
               '10',
             ],
-            backgroundColor: 'blue',
+            backgroundColor: 'rgba(30, 94, 255, 1)',
           },
           {
             label: 'May 22',

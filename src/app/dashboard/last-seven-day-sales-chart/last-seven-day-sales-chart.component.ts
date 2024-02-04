@@ -11,7 +11,6 @@ export class LastSevenDaySalesChartComponent implements OnInit {
 
   ngOnInit(): void {
     this.createChart();
-    console.log('test', this.chart);
   }
   public chart: any;
 

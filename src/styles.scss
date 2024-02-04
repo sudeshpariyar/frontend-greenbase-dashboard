@@ -48,3 +48,14 @@ td.mat-cell {
 mat-icon {
   cursor: pointer;
 }
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: rgba(30, 94, 255, 1);
+  border-color: red;
+}
+.mat-checkbox {
+  background-color: rgba(217, 225, 236, 1);
+}
+mat-checkbox.mat-checkbox-checkmark-path {
+  stroke: white !important;
+}
