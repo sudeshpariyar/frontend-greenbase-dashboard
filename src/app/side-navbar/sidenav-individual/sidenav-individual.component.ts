@@ -9,6 +9,7 @@ import { SideNavBarItems } from 'src/app/side-navbar/side-navbar.component';
 })
 export class SidenavIndividualComponent implements OnInit {
   @Input() navBarItems!: SideNavBarItems[];
+  @Input() sideNavBarWidth!: boolean;
   handleNavSelect = (data: SideNavBarItems) => {
     this.navBarItems.forEach((element) => {
       if (element.label === data.label) element.selected = true;
