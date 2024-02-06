@@ -12,3 +12,15 @@
   margin-inline: 1rem;
   width: 100%;
 }
+@media only screen and (max-width: 768px) {
+  .main-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .side-nav {
+    flex: 0.2;
+  }
+  .router-outlet-body {
+    flex: 0.8;
+  }
+}
